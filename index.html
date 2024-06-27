@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BACSCIENCE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.small-text {
+  font-size: 14px;
+}
+#tour {
+  background: url('/static/images/image1.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+.w3-container.w3-white {
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background for readability */
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="w3-display-container w3-center">
+    <img src="{{ url_for('static', filename='images/bacslogo.PNG') }}" alt="Company Logo" class="img-fluid mt-4" style="max-width: 300px;">
+  </div>
+      
+    </div>
+  </div>
+
+  <!-- The Header Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">We Have Your BACS!</h2>
+    <p class="w3-opacity"><i>Est. 2023</i></p>
+    <p class="w3-justify">BACSCIENCE is a technology solutions company that tackles complex business problems with innovative, data-driven approaches. We specialize in custom software engineering, transforming raw data into actionable insights with advanced data science and machine learning algorithms, and enhancing system performance through business systems analysis. Our services also include creating user-friendly, high-performance websites and mobile applications, optimizing database management systems, ensuring timely and quality project delivery, and providing expert technical consulting. Leveraging cutting-edge technology and strategic analysis, BACSCIENCE delivers exceptional value and drives business growth.</p>
+  </div>
+
+  <!-- The Services Section -->
+  <div id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">OUR SERVICES</h2>
+        <p class="w3-opacity w3-center"><i>Schedule your free consultation for any of our services!</i></p><br>
+
+        <div class="container">
+            <div class="service w3-margin-bottom">
+                <div class="w3-container w3-white">
+                    <p><b>Software Engineering</b></p>
+                    <p>We provide comprehensive software engineering services, including the development of tailored websites, mobile applications, CRM systems, and optimized database management solutions to enhance performance and scalability.</p>
+                    <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Send Inquiry</button>
+                </div>
+            </div>
+            <div class="service w3-margin-bottom">
+                <div class="w3-container w3-white">
+                    <p><b>Machine Learning</b></p>
+                    <p>We provide custom machine learning solutions, including predictive modeling, data analysis, and algorithm development to help businesses leverage data for informed decision-making and strategic insights.</p>
+                    <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Send Inquiry</button>
+                </div>
+            </div>
+            <div class="service w3-margin-bottom">
+                <div class="w3-container w3-white">
+                    <p><b>Data Visualization</b></p>
+                    <p class="w3-opacity">Sun 29 Nov 2016</p>
+                    <p>We provide data visualization services, creating interactive and insightful Tableau dashboards and reports to help businesses understand complex data patterns and make informed decisions.</p>
+                    <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Send Inquiry</button>
+                </div>
+            </div>
+            <div class="service w3-margin-bottom">
+                <div class="w3-container w3-white">
+                    <p><b>Business Systems Analysis</b></p>
+                    <p>Evaluate and improve organizational processes and systems by analyzing business needs, identifying solutions, and implementing changes to enhance efficiency and effectiveness.</p>
+                    <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Send Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-black w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Schedule Your Free Consultation!</h2>
+      </header>
+      <div class="w3-container">
+        <form action="https://formsubmit.co/bacs@myyahoo.com" method="POST">
+            <p><label><i class="fa fa-shopping-cart"></i> Briefly Describe Your Project</label></p>
+            <input class="w3-input w3-border" type="text" name="project_description" placeholder="Ex: project type, requirements, scale" required>
+            <p><label><i class="fa fa-user"></i> Enter Your Email</label></p>
+            <input class="w3-input w3-border" type="email" name="email" placeholder="Enter email" required>
+            <button class="w3-button w3-block w3-green w3-padding-16 w3-section w3-right" type="submit">SUBMIT! <i class="fa fa-check"></i></button>
+            <button class="w3-button w3-red w3-section" type="button" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+        </form>
+    </div>
+    
+    </div>
+  </div>
+<!-- The Contact Section -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <h2 class="w3-wide w3-center">CONTACT</h2>
+  <p class="w3-opacity w3-center"><i>Send us a message! </i></p>
+  <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i> California, US<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +1 (916) 696-9251<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: Bacs@myyahoo.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="https://formsubmit.co/bacs@myyahoo.com" method="POST" >
+          
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                  <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
+              </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+      </form>
+      
+      </div>
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.instagram.com/bacs.cience/" target="_blank" class="w3-hover-opacity"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/bacscience/" target="_blank" class="w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
+<p class="w3-medium">Founded by <a href="https://www.linkedin.com/in/naveet916/" target="_blank">A Problem Solver</a></p>
+
+<!-- The About Section -->
+  <p class="w3-opacity"><i>Learn more about our journey and values</i></p>
+  <p class="w3-justify small-text">Founded in 2023, BACSCIENCE is committed to delivering innovative technology solutions that drive business success. Our team of experts is dedicated to providing exceptional service and creating value for our clients through customized software solutions, advanced data analysis, and strategic consulting. At BACSCIENCE, we believe in the power of technology to transform businesses and are passionate about helping our clients achieve their goals.</p>
+</footer>
+<script>
+// Automatic Slidesow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";  
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}    
+x[myIndex-1].style.display = "block";  
+setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else { 
+  x.className = x.className.replace(" w3-show", "");
+}
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+</script>
+
+</body>
+</html>
